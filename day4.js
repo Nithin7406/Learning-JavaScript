@@ -66,3 +66,109 @@
 // } else {
 //   console.log("Invalid marks");
 // }
+
+//q5
+// let season = prompt("Enter the Month");
+
+// switch (season) {
+//   case September:
+//   case October:
+//   case November:
+//     console.log("weather is Autumn");
+//     break;
+//   case December:
+//   case January:
+//   case February:
+//     console.log("weather is Winter");
+//     break;
+//   case March:
+//   case April:
+//   case May:
+//     console.log("weather is Spring");
+//     break;
+//   case June:
+//   case July:
+//   case August:
+//     console.log("weather is Summer");
+//     break;
+//   default:
+//     console.log("Enter valid month");
+// }
+
+// let season = prompt("Enter the Month");
+
+// if (season === "September" || season === "October" || season === "November") {
+//   console.log("weather is Autumn");
+// } else if (
+//   season === "December" ||
+//   season === "January" ||
+//   season === "February"
+// ) {
+//   console.log("weather is Winter");
+// } else if (season === "March" || season === "April" || season === "May") {
+//   console.log("weather is Spring");
+// } else if (season === "June" || season === "July" || season === "August") {
+//   console.log("weather is Summer");
+// } else {
+//   console.log("Invalid month");
+// }
+
+//q6
+
+// let weeks = prompt("Enter the day");
+// let week = weeks.toLowerCase();
+
+// if (
+//   week === "monday" ||
+//   week === "tuesday" ||
+//   week === "wednesday" ||
+//   week === "thersday" ||
+//   week === "friday"
+// ) {
+//   console.log(`what day is today? - ${week}\n ${week} is wroking day`);
+// } else if (week === "satursday" || week === "sunday") {
+//   console.log(`what day is today? - ${week}\n${week} is weekend`);
+// } else {
+//   console.log("invalid day");
+// }
+
+//q7
+// for (let i = 0; i <= 10; i++) {
+//   if (i % 2 === 0) {
+//     console.log("even=" + i);
+//   }
+// }
+// for (let i = 0; i <= 10; i++) {
+//   if (i % 2 !== 0) {
+//     console.log("odd=" + i);
+//   }
+// }
+
+let Months = prompt("Enter the day");
+let month = Months.toLowerCase();
+
+switch (month) {
+  case "january":
+    console.log(`Enter a month: ${month}\n${month} has 31 days.`);
+    break;
+  case "fabruary":
+    console.log(`Enter a month: ${month}\n${month} has 28 days.`);
+    break;
+  case "march":
+    console.log(`Enter a month: ${month}\n${month} has 31 days.`);
+    break;
+  case "april":
+    console.log(`Enter a month: ${month}\n${month} has 30 days.`);
+    break;
+  case "may":
+    console.log(`Enter a month: ${month}\n${month} has 31 days.`);
+    break;
+  case "june":
+    console.log(`Enter a month: ${month}\n${month} has 30 days.`);
+    break;
+  case "july":
+    console.log(`Enter a month: ${month}\n${month} has 31 days.`);
+    break;
+  default:
+    console.log("Enter the valid month");
+}
