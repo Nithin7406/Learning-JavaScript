@@ -35,15 +35,52 @@
 //   console.log(`${a}x${a} = ${b}`);
 // }
 
-// //q6
+// // //q6
 // console.log("i\ti^2\ti^3\ti^4\n---------------");
 // for (a = 0; a <= 10; a++) {
 //   console.log(`${a} ${a ** 2} ${a ** 3} ${a ** 4}`);
 // }
 
-//q7
-for (let a = 0; a <= 100; a++) {
-  if (a % 2 !== 0) {
-    console.log(a);
-  }
-}
+// //q7
+// for (let a = 0; a <= 100; a++) {
+//   if (a % 2 !== 0) {
+//     console.log(a);
+//   }
+// }
+
+// //q
+// const n = 10; // You can change the value of n as needed
+
+// console.log("Odd Numbers:");
+
+// for (let i = 1; i <= n; i += 2) {
+//   console.log(i);
+// }
+
+//q16
+// const fullStack = [
+//   ["HTML", "CSS", "JS", "React"],
+//   ["Node", "Express", "MongoDB"],
+// ];
+
+// for (let i = 0; i < fullStack.length; i++) {
+//   for (let j = 0; j < fullStack[i].length; j++) {
+//     console.log(fullStack[i][j].toUpperCase());
+//   }
+// }
+
+// //q1
+// const countries = ["USA", "Canada", "UK", "Australia"];
+
+// const copiedCountries = countries.slice();
+
+// console.log(copiedCountries);
+
+//q2
+const countries = ["USA", "Canada", "UK", "Australia"];
+
+const copiedCountries = [...countries];
+
+const sortedCountries = copiedCountries.sort();
+
+console.log(sortedCountries);
