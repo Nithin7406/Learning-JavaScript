@@ -22,29 +22,28 @@
 // });
 
 //
-// let a = [90, 96, 80, 92, 88, 86];
-// let newarr = a.filter((val) => {
-//   return val >= 90;
-// });
-// console.log(newarr);
+let a = [90, 96, 80, 92, 88, 86];
+let newarr = a.filter((val) => {
+  return val >= 90;
+});
+console.log(newarr);
 
-// debugger;
-// let n = prompt("enter the number");
-// let ar = [];
-// for (let a = 1; a <= n; a++) {
-//   ar[a - 1] = a;
-// }
-// console.log(ar);
+let n = prompt("enter the number");
+let ar = [];
+for (let a = 1; a <= n; a++) {
+  ar[a - 1] = a;
+}
+console.log(ar);
 
-// let sum = ar.reduce((i, j) => {
-//   return i + j;
-// });
-// console.log(sum);
+let sum = ar.reduce((i, j) => {
+  return i + j;
+});
+console.log(sum);
 
-// let mul = ar.reduce((i, j) => {
-//   return i * j;
-// });
-// console.log(mul);
+let mul = ar.reduce((i, j) => {
+  return i * j;
+});
+console.log(mul);
 
 const arr = [
   { id: 1, name: "naveen" },
