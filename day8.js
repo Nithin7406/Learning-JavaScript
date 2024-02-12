@@ -112,15 +112,26 @@ const url = "https://restcountries.com/v2/all"; // countries api
 // const value = await square(2);
 // console.log(value);
 
-const fetchData = async () => {
-  debugger;
-  try {
-    const response = await fetch(url);
-    const countries = await response.json();
-    console.log(countries);
-  } catch (err) {
-    console.error(err);
-  }
-};
-console.log("===== async and await");
-fetchData();
+// const fetchData = async () => {
+//   try {
+//     const response = await fetch(url);
+//     const countries = await response.json();
+//     console.log(countries);
+//   } catch (err) {
+//     console.error(err);
+//   }
+// };
+// console.log("===== async and await");
+// fetchData();
+
+const countriesAPI = "https://restcountries.com/v2/all";
+
+fetch(countriesAPI)
+  .then((response) => response.json())
+  .then((item) => {
+    item.forEach((country) => {
+      const name = country.name;
+      console.log("Country: " + name);
+    });
+  })
+  .catch((error) => console.error("Error fetching data:", error));

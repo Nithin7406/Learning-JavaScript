@@ -7,22 +7,57 @@
     <title>Document</title>
   </head>
   <body>
-    <p>Nithin</p>
-    <!-- <script src="./day1.js"></script> -->
-    <!-- <script src="./day2.js"></script> -->
-    <!-- <script src="./day3.js"></script> -->
-    <!-- <script src="./day4.js"></script> -->
-    <!-- <script src="./day5.js"></script> -->
-    <!-- <script src="./main.js" type="module"></script> -->
-    <script src="./day8.js"></script>
+    <!-- <p>Nithin</p> -->
 
-    <style>
-      p {
-        color: rgb(228, 236, 236);
-      }
-      body {
-        background-color: rgb(37, 37, 37);
-      }
-    </style>
+    <!-- <select id="countryDropdown">
+      <option value="">Select a country</option>
+    </select>
+    
+    <script>
+      const countriesAPI = 'https://restcountries.com/v2/all';
+    
+      fetch(countriesAPI)
+        .then(response => response.json())
+        .then(data => {
+          const countryDropdown = document.getElementById("countryDropdown");
+          
+          data.forEach(country => {
+            const name = country.name;
+            const option = document.createElement("option");
+            option.text = name;
+            option.value = name; // You can set value to any other unique identifier if needed
+            countryDropdown.append(option);
+            console.log('name = '+name)
+          });
+        })
+        .catch(error => console.error("Error fetching data:", error));
+      </script> -->
+
+    <!-- <h1>kanaka</h1>
+    <h1>nithin</h1>
+    <h1 id="dumma">praveen</h1>
+    <h1 class="maha">UPS</h1>
+
+    <input type="text" id="input1" />
+    <ul></ul> -->
+
+    <div class="wrapper">
+      <h1>Asabeneh Yetayeh challenges in <span id="2020">2020</span></h1>
+      <h2>30DaysOfJavaScript Challenge</h2>
+      <div id="liveDateTime"></div>
+
+      <ul>
+        <li>30DaysOfPython Challenge Done</li>
+        <li>30DaysOfJavaScript Challenge Ongoing</li>
+        <li>30DaysOfReact Challenge Coming</li>
+        <li>30DaysOfFullStack Challenge Coming</li>
+        <li>30DaysOfDataAnalysis Challenge Coming</li>
+        <li>30DaysOfReactNative Challenge Coming</li>
+        <li>30DaysOfMachineLearning Challenge Coming</li>
+      </ul>
+    </div>
+
+    <!-- <script src="./main.js" type="module"></script> -->
+    <script src="./DOM.js"></script>
   </body>
 </html>
