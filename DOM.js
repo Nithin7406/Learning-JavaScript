@@ -82,8 +82,13 @@ function updateDateTime() {
   hours = hours ? hours : 12; // Handle midnight (0 hours)
 
   const dateTimeString = `${month}/${day}/${year} ${hours}:${minutes}:${seconds} ${amPM}`;
-  document.getElementById("liveDateTime").innerText = dateTimeString;
+  const fulldata = (document.getElementById("liveDateTime").innerText =
+    dateTimeString);
 }
 updateDateTime();
 
 setInterval(updateDateTime, 1000);
+setInterval(() => {
+  const fulldate = document.getElementById("liveDateTime");
+  fulldate.style.backgroundColor = getRandomColor();
+}, 1000);

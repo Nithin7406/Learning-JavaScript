@@ -1,0 +1,24 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#liveDateTime {
+  width: 15%;
+  padding: 2px;
+}
+
+ul li {
+  list-style-type: none;
+  width: 30%;
+  padding: 5px;
+  margin: 2px;
+  background-color: rgba(255, 0, 64, 0.699);
+}
+ul li:first-child {
+  background-color: rgba(59, 173, 68, 0.76);
+}
+
+li:nth-child(2) {
+  background-color: rgba(252, 240, 71, 0.651);
+}
