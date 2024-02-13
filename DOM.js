@@ -92,3 +92,22 @@ setInterval(() => {
   const fulldate = document.getElementById("liveDateTime");
   fulldate.style.backgroundColor = getRandomColor();
 }, 1000);
+
+addColor();
+
+const button = document.querySelector("button");
+button.addEventListener("click", (e) => {
+  const input1 = document.getElementById("input1");
+  const li = document.createElement("li");
+  li.textContent = input1.value;
+  document.getElementById("list").appendChild(li);
+  addColor();
+});
+
+const addLi = function (e) {
+  let li = document.createElement("li");
+  li.className = "li";
+  li.textContent = "30DaysOfMachineLearning Challenge Ongoing";
+  document.getElementById("list").appendChild(li);
+  addColor();
+};
