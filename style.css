@@ -4,7 +4,7 @@ body {
 }
 
 #liveDateTime {
-  width: 15%;
+  width: max-content;
   padding: 2px;
 }
 
